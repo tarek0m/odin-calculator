@@ -1,0 +1,88 @@
+* {
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#calc {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  height: 300px;
+  width: 200px;
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 20px;
+  background-color: darkgrey;
+}
+
+#calc > * {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+#display {
+  flex: 0 0 100%;
+  height: 70px;
+  background-color: aliceblue;
+  box-sizing: border-box;
+  text-align: right;
+  align-content: end;
+  overflow: hidden;
+}
+
+#result {
+  /* background-color: rgb(142, 86, 12); */
+  font-size: 24px;
+  padding: 4px;
+  height: 70%;
+}
+
+#history {
+  padding: 6px;
+  font-size: 16px;
+  color: #777;
+  /* background-color: rgb(206, 203, 10); */
+  height: 30%;
+}
+
+button {
+  flex: 0 0 22.9%;
+  text-align: center;
+  align-content: center;
+}
+
+button:hover {
+  color: aliceblue;
+  background-color: #3b3e7f;
+}
+
+#operate:hover {
+  background-color: #0c6033;
+}
+
+#bck:hover,
+#ce:hover,
+#c:hover {
+  background-color: #8f0707;
+}
+
+[id="0"]:hover,
+[id="1"]:hover,
+[id="2"]:hover,
+[id="3"]:hover,
+[id="4"]:hover,
+[id="5"]:hover,
+[id="6"]:hover,
+[id="7"]:hover,
+[id="8"]:hover,
+[id="9"]:hover {
+  background-color: #6b7e92;
+}
